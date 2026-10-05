@@ -1,0 +1,25 @@
+# Builds the site and runs Lighthouse on every push and pull request
+# (including Dependabot's), so an update that breaks the build or drops a
+# score shows up before it is merged. Thresholds in lighthouserc.json:
+# accessibility, best practices and SEO at 95; performance at 90, since
+# shared CI runners measure slower and noisier than a real device.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Lighthouse
+        run: npx --yes @lhci/cli@0.15.x autorun

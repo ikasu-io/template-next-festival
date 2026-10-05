@@ -1,0 +1,61 @@
+# The Info page: one section per topic, then the questions people ask.
+# Texts are Markdown.
+sections:
+  - key: getting-there
+    title: Getting there
+    text: |
+      Take the train to **Vlietsluis**. A free shuttle bus runs from the
+      station to the festival gate every 15 minutes, from an hour before
+      the gates open until an hour after the last act.
+
+      By bike it is 9 km along the dyke from Vlietsluis; there is a
+      guarded bike park for 2,000 bikes at the gate. There is **no car
+      parking** at the site. Taxis and drop-offs can use the turning
+      point on the Zeeweg.
+  - key: camping
+    title: Camping
+    text: |
+      The campsite is in the dunes, five minutes' walk from the gate. It
+      opens on Friday at 12:00 and closes on Monday at 12:00. Bring your
+      own tent; showers, toilets, phone lockers and a coffee bar are on
+      site. Quiet hours from 03:00 to 09:00.
+  - key: food
+    title: Food and drink
+    text: |
+      Twenty food stalls, half of them vegetarian or vegan, most from the
+      region. Drinking water is free at four taps; bring an empty bottle.
+      Cups are reusable with a €1 deposit. Payment is by card or phone
+      only.
+  - key: access
+    title: Accessibility
+    text: |
+      There are raised viewing platforms at the Dijk and Kas stages,
+      accessible toilets at every stage, and a quiet tent behind the
+      Strand stage. The paths are hard-packed sand and boardwalk. If you
+      need a companion, their ticket is free: write to us before you buy.
+  - key: kids
+    title: Children
+    text: |
+      Under-12s come in free with an adult; register them when you buy
+      your ticket. Sunday is family day, with a kids' show on the Strand
+      stage at 11:30. Bring ear protection, or borrow it at the info
+      point.
+  - key: rain
+    title: When it rains
+    text: |
+      The festival goes on. The Kas is covered, and the Dijk stage has a
+      roof; you don't. Ponchos cost €3 at the info point. We only stop
+      the programme for lightning, and we post every change on this site.
+faq:
+  - q: Can I bring my own food and drink?
+    a: Food yes, a closed bottle of water yes, other drinks no. No glass anywhere on the site.
+  - q: Is there a minimum age?
+    a: No. Under-16s need an adult with them; under-12s come in free.
+  - q: Can I leave and come back?
+    a: Yes. Your wristband gets you in and out as often as you like.
+  - q: Are dogs allowed?
+    a: Only assistance dogs. It is too loud for the others.
+  - q: What if I can't come after all?
+    a: Tickets are personal but can be passed on through the ticket shop's resale page, at the price you paid.
+  - q: Is there a cloakroom?
+    a: Yes, at the gate, €3 per item. Phone lockers with chargers cost €5 a day.

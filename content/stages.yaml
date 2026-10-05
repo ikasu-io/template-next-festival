@@ -1,0 +1,13 @@
+# The stages, in the order they appear in the timetable.
+- key: dijk
+  name: Dijk
+  about: The main stage, on top of the dyke, with the sea behind the crowd.
+  colour: "#FF6B57"
+- key: kas
+  name: Kas
+  about: A hundred-year-old greenhouse turned dance tent. Covered, late and loud.
+  colour: "#C9F26B"
+- key: strand
+  name: Strand
+  about: A small wooden stage on the beach. Acoustic, afternoons, bring a towel.
+  colour: "#4CC3C9"

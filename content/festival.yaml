@@ -1,0 +1,32 @@
+# The festival: name, dates, place and contact. Shown in the header,
+# footer, on the home page and in the search-engine data.
+name: Brakwater Festival
+tagline: Three days of music where the river meets the sea.
+# Your domain, without a trailing slash.
+url: https://brakwater.example
+email: info@brakwater.example
+organiser: Stichting Brakwater
+founded: 2012
+visitors_per_day: 4000
+place:
+  name: Brakwater festival site
+  street: Zeedijk 4
+  town: Oosterzand
+  country: NL
+# Where the ticket buttons go. Replace with your ticket provider's page.
+tickets_url: /tickets/checkout/
+# The festival days, in order. Gates open at `gates`, the last act ends
+# by `close` (after midnight counts as the same festival day).
+days:
+  - key: friday
+    date: 2027-07-09
+    gates: "16:00"
+    close: "02:00"
+  - key: saturday
+    date: 2027-07-10
+    gates: "11:00"
+    close: "02:00"
+  - key: sunday
+    date: 2027-07-11
+    gates: "11:00"
+    close: "22:00"

@@ -1,0 +1,28 @@
+{
+  "name": "template-next-festival",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Brakwater Festival — a fictional open-air music festival website built with Next.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "images": "node scripts/images.mjs",
+    "dev": "node scripts/images.mjs && next dev",
+    "prebuild": "node scripts/images.mjs",
+    "build": "next build",
+    "start": "npx serve out"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^18.0.14",
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sharp": "^0.35.5",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.5"
+  }
+}

@@ -1,0 +1,31 @@
+# Ticket types. `status` is on-sale, few-left or sold-out.
+- key: weekend
+  name: Weekend
+  days: Friday to Sunday
+  price: 145
+  status: few-left
+  includes: All three days, the shuttle bus from Vlietsluis station, free water refills.
+- key: friday
+  name: Friday evening
+  days: Friday 9 July, from 16:00
+  price: 45
+  status: on-sale
+  includes: The opening night on the Dijk, Kas and Strand stages.
+- key: saturday
+  name: Saturday
+  days: Saturday 10 July
+  price: 69
+  status: sold-out
+  includes: The longest day, from 11:00 until 02:00 in the Kas.
+- key: sunday
+  name: Sunday
+  days: Sunday 11 July
+  price: 59
+  status: on-sale
+  includes: Brass, folk and the closing set on the Dijk. Family day.
+- key: camping
+  name: Camping
+  days: Friday 12:00 to Monday 12:00
+  price: 35
+  status: on-sale
+  includes: A pitch in the dunes campsite, showers, a locker for your phone. Needs a weekend ticket.
