@@ -1,6 +1,6 @@
-# Brakwater Festival — a music festival website built with Next.js
+# Kweldertij Festival — a music festival website built with Next.js
 
-> **Brakwater Festival is fictional.** The village of Oosterzand, the
+> **Kweldertij Festival is fictional.** The village of Zandewaard, the
 > bands, the people and the photos are all made up. The site, its content
 > and its images were generated with AI, and it is maintained with
 > [Ikasu](https://ikasu.io), an AI content copilot for static sites.

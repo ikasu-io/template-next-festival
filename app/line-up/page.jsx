@@ -3,7 +3,7 @@ import { dayMonth, getActs, getFestival, getStages } from '@/lib/content'
 
 export const metadata = {
   title: 'Line-up',
-  description: 'Every act at Brakwater Festival, by day and stage.',
+  description: 'Every act at Kweldertij Festival, by day and stage.',
   alternates: { canonical: '/line-up/' },
 }
 

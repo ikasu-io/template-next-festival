@@ -16,7 +16,7 @@ the weekend, timed for the sunset.
 
 In the Kas, Friday and Saturday run until two in the morning, with
 Vela Nine and Selma Ruiz playing the long closing sets. On the Strand
-stage it's folk, jazz and chanson every afternoon, and the Puddle Jumpers
+stage it's folk, jazz and chanson every afternoon, and De Plasspringers
 for the youngest visitors on Sunday.
 
 And, as every year, the Fanfare Zoutkeet open Sunday on the dyke.

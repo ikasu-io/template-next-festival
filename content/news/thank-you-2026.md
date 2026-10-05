@@ -6,7 +6,7 @@ image: dawn-sea
 ---
 
 The last of the stages came down on Wednesday, and the beach looks like
-nothing happened. Some numbers from Brakwater 2026:
+nothing happened. Some numbers from Kweldertij 2026:
 
 - 12,000 visitors over three days
 - 4,100 people who came by train and shuttle bus, and 3,800 by bike

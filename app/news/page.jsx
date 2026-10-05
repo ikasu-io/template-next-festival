@@ -4,7 +4,7 @@ import { getNews, longDate } from '@/lib/content'
 
 export const metadata = {
   title: 'News',
-  description: 'News from Brakwater Festival: line-up, tickets, the site.',
+  description: 'News from Kweldertij Festival: line-up, tickets, the site.',
   alternates: { canonical: '/news/' },
 }
 

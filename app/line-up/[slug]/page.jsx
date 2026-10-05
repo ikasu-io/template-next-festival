@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
   if (!act) return {}
   return {
     title: act.name,
-    description: `${act.name} (${act.genre}, ${act.origin}) at Brakwater Festival: ${act.dayInfo.name} ${act.start} on the ${act.stage} stage.`,
+    description: `${act.name} (${act.genre}, ${act.origin}) at Kweldertij Festival: ${act.dayInfo.name} ${act.start} on the ${act.stage} stage.`,
     alternates: { canonical: `/line-up/${act.slug}/` },
   }
 }

@@ -56,7 +56,7 @@ export default function Home() {
           <p className="hero-status">{status.text}</p>
           <h1 className="hero-title">
             <span className="visually-hidden">{festival.name}</span>
-            <span aria-hidden="true">Brakwater</span>
+            <span aria-hidden="true">Kweldertij</span>
           </h1>
           <p className="hero-dates">
             {Number(first.date.slice(8))}—{longDate(last.date)}

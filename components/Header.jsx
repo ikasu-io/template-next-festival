@@ -16,7 +16,7 @@ export default function Header() {
     <header className="header">
       <div className="wrap header-bar">
         <Link href="/" className="logo" aria-label={`${festival.name}, home`}>
-          <span className="logo-name">Brakwater</span>
+          <span className="logo-name">Kweldertij</span>
           <span className="logo-date">
             {Number(first.date.slice(8))}–{Number(last.date.slice(8))}.{first.date.slice(5, 7)}.{String(festival.year).slice(2)}
           </span>

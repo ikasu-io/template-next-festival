@@ -1,4 +1,4 @@
-/* Brakwater Festival — all styles. Colours, fonts and spacing are the
+/* Kweldertij Festival — all styles. Colours, fonts and spacing are the
    tokens below. Fonts come from app/layout.jsx (--font-display, --font-body). */
 
 :root {
@@ -501,7 +501,7 @@ code {
   transform: rotate(-2deg);
 }
 .hero-title {
-  font-size: clamp(2.6rem, 11.5vw, 12rem);
+  font-size: clamp(2.4rem, 11vw, 12rem);
   font-weight: 900;
   line-height: 0.85;
   letter-spacing: -0.06em;

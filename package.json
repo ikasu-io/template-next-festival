@@ -2,7 +2,7 @@
   "name": "template-next-festival",
   "version": "1.0.0",
   "private": true,
-  "description": "Brakwater Festival — a fictional open-air music festival website built with Next.js",
+  "description": "Kweldertij Festival — a fictional open-air music festival website built with Next.js",
   "license": "MIT",
   "type": "module",
   "scripts": {

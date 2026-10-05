@@ -1,5 +1,5 @@
 ---
-name: "Oskar Brandt Trio"
+name: "Trio Elbsand"
 origin: Hamburg, Germany
 genre: Jazz
 day: saturday

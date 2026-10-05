@@ -3,7 +3,7 @@ import { dayMonth, getActs, getFestival, getStages } from '@/lib/content'
 
 export const metadata = {
   title: 'Timetable',
-  description: 'Who plays when and where at Brakwater Festival. Star the acts you want to see to make your own plan.',
+  description: 'Who plays when and where at Kweldertij Festival. Star the acts you want to see to make your own plan.',
   alternates: { canonical: '/timetable/' },
 }
 

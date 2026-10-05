@@ -1,5 +1,5 @@
 ---
-name: "The Puddle Jumpers"
+name: "De Plasspringers"
 origin: Leiden, Netherlands
 genre: Kids' show
 day: sunday

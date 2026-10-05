@@ -3,7 +3,7 @@ import { getFestival, getInfo } from '@/lib/content'
 
 export const metadata = {
   title: 'Info',
-  description: 'Getting to Brakwater Festival, camping, food, accessibility, children, and what happens when it rains.',
+  description: 'Getting to Kweldertij Festival, camping, food, accessibility, children, and what happens when it rains.',
   alternates: { canonical: '/info/' },
 }
 

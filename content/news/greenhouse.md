@@ -12,7 +12,7 @@ morning on Friday and Saturday.
 
 We are keeping the glass, the iron frame and the old heating pipes. The
 farmer who owns it, Jan de Wit, grew up a field away from the festival
-site and came to his first Brakwater in 2013.
+site and came to his first Kweldertij in 2013.
 
 > "My grandfather built it. I'd rather it was full of people dancing than standing empty."
 

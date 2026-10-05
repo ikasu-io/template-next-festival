@@ -1,17 +1,17 @@
 # The festival: name, dates, place and contact. Shown in the header,
 # footer, on the home page and in the search-engine data.
-name: Brakwater Festival
+name: Kweldertij Festival
 tagline: Three days of music where the river meets the sea.
 # Your domain, without a trailing slash.
-url: https://brakwater.example
-email: info@brakwater.example
-organiser: Stichting Brakwater
+url: https://kweldertij.example
+email: info@kweldertij.example
+organiser: Stichting Kweldertij
 founded: 2012
 visitors_per_day: 4000
 place:
-  name: Brakwater festival site
+  name: Kweldertij festival site
   street: Zeedijk 4
-  town: Oosterzand
+  town: Zandewaard
   country: NL
 # Where the ticket buttons go. Replace with your ticket provider's page.
 tickets_url: /tickets/checkout/

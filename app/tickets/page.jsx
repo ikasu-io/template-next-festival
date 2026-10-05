@@ -2,7 +2,7 @@ import { getFestival, getTickets } from '@/lib/content'
 
 export const metadata = {
   title: 'Tickets',
-  description: 'Weekend, day and camping tickets for Brakwater Festival. Children under 12 free.',
+  description: 'Weekend, day and camping tickets for Kweldertij Festival. Children under 12 free.',
   alternates: { canonical: '/tickets/' },
 }
 

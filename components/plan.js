@@ -2,7 +2,7 @@
 // "My plan": the acts a visitor has starred, kept in their browser only.
 import { useSyncExternalStore } from 'react'
 
-const KEY = 'brakwater-plan'
+const KEY = 'kweldertij-plan'
 const listeners = new Set()
 
 function read() {
