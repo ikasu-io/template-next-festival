@@ -8,7 +8,9 @@ site. They do not show real places, people, bands or brands.
   kept in the maintainer's brief for this template
 - **Processing:** cropped to their aspect ratio and scaled to at most
   1600 px wide; `scripts/images.mjs` converts them to WebP before every
-  build
+  build. Gemini wrote a made-up festival name on the stage banner in
+  `hero-dyke`, `crowd-hands` and `rain-ponchos`; the lettering was
+  blurred out
 - **Licence:** like the rest of this repository, the images are under the
   [MIT licence](LICENSE). You may use, change and redistribute them,
   including in your own site.

@@ -50,7 +50,8 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section className="hero">
-        <Photo name="hero-dyke" eager className="hero-photo" />
+        {/* The hero fills the screen height, so on tall screens the photo is wider than the screen. */}
+        <Photo name="hero-dyke" sizes="(max-aspect-ratio: 16/9) 170vh, 100vw" eager className="hero-photo" />
         <div className="wrap hero-text">
           <p className="hero-status">{status.text}</p>
           <h1 className="hero-title">
