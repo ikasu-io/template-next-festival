@@ -60,6 +60,14 @@ rebuild it now and then (Ikasu does this after every edit).
 Netlify, Cloudflare Pages, GitHub Pages, your own server. Set `url` in
 `content/festival.yaml` to your domain.
 
+## Using this for a real site
+
+The images look real but were generated with AI, and the
+notice in the footer is what labels them. If you publish a real site with
+them and remove that notice, you may have to label them yourself, for
+example under Article 50 of the EU AI Act. Replacing them with your own
+avoids the question.
+
 ## Licence
 
 MIT, see [LICENSE](LICENSE). Images: see [IMAGES.md](IMAGES.md).
