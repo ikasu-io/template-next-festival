@@ -32,14 +32,22 @@ export default function Info() {
           </ul>
         </nav>
         <div className="info-body">
-          {sections.map((s) => (
-            <section key={s.key} id={s.key} className="info-section">
-              <h2>{s.title}</h2>
-              {photos[s.key] && <Photo name={photos[s.key]} desktop="50vw" className="info-photo" />}
-              <div className="prose" dangerouslySetInnerHTML={{ __html: s.html }} />
+          {sections.map((s, i) => (
+            <section key={s.key} id={s.key} className={`info-section${photos[s.key] ? ' with-photo' : ''}`}>
+              <div className="info-text">
+                <p className="info-num" aria-hidden="true">
+                  {String(i + 1).padStart(2, '0')}
+                </p>
+                <h2>{s.title}</h2>
+                <div className="prose" dangerouslySetInnerHTML={{ __html: s.html }} />
+              </div>
+              {photos[s.key] && <Photo name={photos[s.key]} desktop="30vw" className="info-photo" />}
             </section>
           ))}
           <section id="questions" className="info-section">
+            <p className="info-num" aria-hidden="true">
+              {String(sections.length + 1).padStart(2, '0')}
+            </p>
             <h2>Questions</h2>
             {faq.map((f) => (
               <details key={f.q} className="faq">

@@ -58,23 +58,54 @@ export default function Home() {
             <span className="visually-hidden">{festival.name}</span>
             <span aria-hidden="true">Kweldertij</span>
           </h1>
-          <p className="hero-dates">
-            {Number(first.date.slice(8))}—{longDate(last.date)}
-            <span>
-              {festival.place.town}, on the Dutch coast
-            </span>
-          </p>
-          <p className="hero-tagline">{festival.tagline}</p>
-          <div className="buttons">
-            <Link className="button" href="/tickets/">
-              Tickets
-            </Link>
-            <Link className="button ghost" href="/line-up/">
-              See the line-up
-            </Link>
+          <div className="hero-row">
+            <p className="hero-dates">
+              {Number(first.date.slice(8))}—{longDate(last.date)}
+            </p>
+            <p className="hero-tagline">{festival.tagline}</p>
+            <div className="buttons">
+              <Link className="button" href="/tickets/">
+                Tickets
+              </Link>
+              <Link className="button ghost" href="/line-up/">
+                See the line-up
+              </Link>
+            </div>
           </div>
+          <dl className="hero-facts">
+            <div>
+              <dt>Where</dt>
+              <dd>{festival.place.town}, on the Dutch coast</dd>
+            </div>
+            <div>
+              <dt>Line-up</dt>
+              <dd>
+                {acts.length} acts on {stages.length} stages
+              </dd>
+            </div>
+            <div>
+              <dt>Since</dt>
+              <dd>{festival.founded}, run by volunteers</dd>
+            </div>
+          </dl>
         </div>
       </section>
+
+      {/* Every act's name running across the page; the names are all listed below too. */}
+      <div className="ticker-clip" aria-hidden="true">
+        <div className="ticker">
+          {[0, 1].map((copy) => (
+            <ul key={copy} className="ticker-track">
+              {acts.map((act) => (
+                <li key={act.slug}>
+                  {act.name}
+                  <span className="ticker-star">✺</span>
+                </li>
+              ))}
+            </ul>
+          ))}
+        </div>
+      </div>
 
       <section className="wrap section" aria-labelledby="headliners">
         <div className="section-head">
@@ -84,10 +115,13 @@ export default function Home() {
           </Link>
         </div>
         <ol className="headliners">
-          {headliners.map((act) => (
+          {headliners.map((act, i) => (
             <li key={act.slug}>
               <Link href={`/line-up/${act.slug}/`} className="headliner">
-                <Cover act={act} grain />
+                <span className="headliner-cover">
+                  <Cover act={act} grain />
+                  <span className="headliner-num">{String(i + 1).padStart(2, '0')}</span>
+                </span>
                 <span className="headliner-day">
                   {act.dayInfo.name} · {stageName[act.stage]} · {act.start}
                 </span>
@@ -119,9 +153,12 @@ export default function Home() {
             </Link>
           </div>
           <div className="stage-list">
-            {stages.map((stage) => (
+            {stages.map((stage, i) => (
               <article key={stage.key} className="stage" style={{ '--stage': stage.colour }}>
-                <Photo name={stagePhotos[stage.key] ?? 'hero-dyke'} desktop="33vw" className="stage-photo" />
+                <p className="stage-num">Stage {String(i + 1).padStart(2, '0')}</p>
+                <div className="stage-frame">
+                  <Photo name={stagePhotos[stage.key] ?? 'hero-dyke'} desktop="33vw" className="stage-photo" />
+                </div>
                 <h3>{stage.name}</h3>
                 <p>{stage.about}</p>
               </article>
@@ -137,13 +174,26 @@ export default function Home() {
             All tickets
           </Link>
         </div>
-        <ul className="ticket-rows">
+        <ul className="ticket-stubs">
           {tickets.map((t) => (
-            <li key={t.key} className={t.status}>
-              <span className="ticket-name">{t.name}</span>
-              <span className="ticket-days">{t.days}</span>
-              <span className={`badge ${t.status}`}>{t.status === 'on-sale' ? 'On sale' : t.status === 'few-left' ? 'Few left' : 'Sold out'}</span>
-              <span className="ticket-price">€{t.price}</span>
+            <li key={t.key} className={`stub ${t.status}`}>
+              <div className="stub-top">
+                <span className={`badge ${t.status}`}>
+                  {t.status === 'on-sale' ? 'On sale' : t.status === 'few-left' ? 'Few left' : 'Sold out'}
+                </span>
+                <h3 className="stub-name">{t.name}</h3>
+                <p className="stub-days">{t.days}</p>
+              </div>
+              <div className="stub-bottom">
+                <span className="stub-price">€{t.price}</span>
+                {t.status === 'sold-out' ? (
+                  <span className="stub-cta muted">Gone</span>
+                ) : (
+                  <Link className="stub-cta" href="/tickets/">
+                    Buy<span className="visually-hidden"> {t.name} ticket</span>
+                  </Link>
+                )}
+              </div>
             </li>
           ))}
         </ul>
